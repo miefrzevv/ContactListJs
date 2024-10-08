@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+}
+
+.header {
+    margin-top: 20px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: rgb(72, 120, 250);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 80px;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header__wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 500;
+    color: rgb(72, 120, 250);
+}
+
+.btn {
+    border: none;
+    background-color: rgb(72, 120, 250);
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header__controls-btn--minus {
+    background-color: red;
+}
+
+.header__search-input {
+    min-width: 240px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: solid 1px #ddd;
+    background-color: transparent;
+    caret-color: rgb(72, 120, 250);
+}
+
+.header__search-input:focus {
+    border: rgb(72, 120, 250);
+    outline-color: rgb(72, 120, 250);
+    outline-width: solid 2px;
+}
+
+.header__search-filter {
+    display: flex;
+    font-size: 16px;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    margin-left: 160px;
+}
+
+
+.header__search-item:hover {
+    text-decoration: underline;
+    font-size: 20px;
+    color: rgb(72, 120, 250);
+    cursor: pointer;
+}
+
+.contact-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 16px;
+    border: solid 1px #ddd;
+    margin-bottom: 16px;
+}
+
+.contact-list__btn-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: green;
+}
+
+.contact-list__btn-delete {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.contact-list__btn-delete::before,
+.contact-list__btn-delete::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    background-color: white;
+    width: 12px;
+    height: 2px;
+}
+
+.contact-list__fullname {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 100px;
+}
+
+.contact-list__vacancy {
+    width: 100px;
+}
+
+.contact-list__phone-number {
+    width: 140px;
+}
+
+.form {
+    z-index: 1;
+    border: solid 2px #ddd;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form__dialog {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    column-gap: 16px;
+}
+
+.form__input-content {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    caret-color: rgb(72, 120, 250);
+}
+
+.form__input-content:focus {
+    border: rgb(72, 120, 250);
+    outline-color: rgb(72, 120, 250);
+    outline-width: solid 2px;
+}
+
+.form__button-delete {
+    background-color: red;
+}
+
+.hide {
+    display: none;
+}
